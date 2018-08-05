@@ -12,6 +12,8 @@ import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
 import { Route } from 'react-router-dom';
+import Paper from '../Paper/Paper'
+import SimpleSelect from '../SimpleSelect/SimpleSelect'
 
 const drawerWidth = 240;
 
@@ -114,8 +116,12 @@ class PermanentDrawer extends React.Component {
           </AppBar>
           {before}
           <main className={classes.content}>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={AboutMe} />
+
+
+          
+          <Route exact path="/" component={Paper} />
+          <Route exact path="/Simple" component={SimpleSelect} />
+       
           </main>
           {after}
         </div>
