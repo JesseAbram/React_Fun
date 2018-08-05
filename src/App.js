@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import SimpleStorageContract from '../build/contracts/SimpleStorage.json'
 import getWeb3 from './utils/getWeb3'
 
+
+
 import Body from './component/Body'
 import AppBarExampleIcon from './AppBar/AppBarExampleIcon'
 import Drawer from './Drawer/Drawer'
@@ -89,7 +91,7 @@ class App extends Component {
               <p></p>
               <Body />
               <AppBarExampleIcon />
-              <Drawer />
+              <Drawer  />
               
             </div>
           </div>

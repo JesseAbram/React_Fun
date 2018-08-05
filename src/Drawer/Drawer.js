@@ -11,6 +11,7 @@ import TextField from '@material-ui/core/TextField';
 import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import { mailFolderListItems, otherMailFolderListItems } from './tileData';
+import { Route } from 'react-router-dom';
 
 const drawerWidth = 240;
 
@@ -113,8 +114,8 @@ class PermanentDrawer extends React.Component {
           </AppBar>
           {before}
           <main className={classes.content}>
-            <div className={classes.toolbar} />
-            <Typography>{'You think water moves fast? You should see ice.'}</Typography>
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={AboutMe} />
           </main>
           {after}
         </div>
